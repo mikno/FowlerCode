@@ -1,17 +1,22 @@
 package refactoring;
+
 class Rental {
-    private Movie movie;
-    private int daysRented;
-    public Rental(Movie newmovie, int newdaysRented) {
-        movie = newmovie;
-        daysRented = newdaysRented;
-    }
-    public int getDaysRented() {
-        return daysRented;
-    }
-    public Movie getMovie() {
-        return movie;
-    }
+	private final Movie movie;
+	private final int daysRented;
+
+	public Rental(Movie newmovie, int newdaysRented) {
+		movie = newmovie;
+		daysRented = newdaysRented;
+	}
+
+	public int getDaysRented() {
+		return daysRented;
+	}
+
+	public Movie getMovie() {
+		return movie;
+	}
+
 	/**
 	 * @param thisAmount
 	 * @return
@@ -35,4 +40,16 @@ class Rental {
 		}
 		return result;
 	}
+
+	/**
+	 * @param frequentRenterPoints
+	 * @param each
+	 * @return
+	 */
+	public int getFrequentRenterPoints() {
+		if ((getMovie().getPriceCode() == Movie.NEW_RELEASE) && getDaysRented() > 1)
+			return 2;
+		return 1;
+	}
+
 }
