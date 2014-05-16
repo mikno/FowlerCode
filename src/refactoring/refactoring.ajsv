@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--AgileJ Ltd. (http://www.agilej.com)--><ajsv>
+    <diagram creationDate="2014-Mai-16 09:31" filterScript="" licenseGrade="evaluation" licenseeName="anon" licenseeOrganization="unknown" version="1.7.17.v20140508-2136">
+        <class className="refactoring.Movie" project="Refactoring" xLocation="672" yLocation="-257"/>
+        <class className="refactoring.Rental" project="Refactoring" xLocation="49" yLocation="-304"/>
+        <class className="refactoring.Program" project="Refactoring" xLocation="602" yLocation="138"/>
+        <class className="refactoring.Customer" project="Refactoring" xLocation="148" yLocation="67"/>
+    </diagram>
+</ajsv>
